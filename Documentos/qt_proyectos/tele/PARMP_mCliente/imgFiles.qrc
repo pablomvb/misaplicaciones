@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>PARMP_baner.png</file>
+    </qresource>
+</RCC>

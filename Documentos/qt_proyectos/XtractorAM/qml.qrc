@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MenuBar.qml</file>
+        <file>Xtractor.qml</file>
+        <file>Descargas.qml</file>
+        <file>Empaquetar.qml</file>
+        <file>Renombrar.qml</file>
+        <file>GuiAplicacion.qml</file>
+        <file>ProgresoBar.qml</file>
+        <file>Button.qml</file>
+        <file>LineInput.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Xtractor</class>
+ <widget class="QMainWindow" name="Xtractor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>821</width>
+    <height>505</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Xtractor</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	font-size: 11pt;
+	background-color: rgb(255, 255, 255);
+	border-width: 1px;
+	border-style: solid;
+	border-color: &quot;#44D10D&quot;;
+}
+
+QWidget#centralWidget{
+	border-style: none;
+}
+
+QWidget#taskBar{
+	border-style: none;
+}
+
+QStackedWidget#visor{
+	border-style: none;
+}
+
+QWidget#analisis{
+	border-style: none;
+}
+
+QWidget#captura{
+	border-style: none;
+}
+
+QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 136, 2);
+	border-style: none;
+	height: 25px;
+}
+
+QPushButton:hover {
+	background-color: &quot;#44D10D&quot;;
+}
+
+QLineEdit {
+	border-style: solid;
+}
+
+QGroupBox{
+	border-style: solid;
+}
+
+QLabel{
+	border-style: none;
+}
+
+QTextEdit{
+	border-style: solid;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="visor">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="AppAnalisis" name="analisis"/>
+      <widget class="AppCaptura" name="captura"/>
+     </widget>
+    </item>
+    <item>
+     <widget class="TaskBar" name="taskBar" native="true">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>TaskBar</class>
+   <extends>QWidget</extends>
+   <header>taskbar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AppAnalisis</class>
+   <extends>QWidget</extends>
+   <header>appanalisis.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AppCaptura</class>
+   <extends>QWidget</extends>
+   <header>appcaptura.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
